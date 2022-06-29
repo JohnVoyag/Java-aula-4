@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(23, 199, 199);
+            color: white;
+            font: normal 25pt Arial;
+        }
+        h1 {
+            color:black
+        }
+    </style>
+</head>
+<body>
+   <h1>Olá, Mundo!</h1>
+   <p>Já me livrei da maldição.</p>
+   <script>
+    //alert('Minha primeira mensagem')
+    confirm('Está gostando de JavaScript?')
+    //prompt('Qual é o seu nome')// Vai perguntar o nome
+    var nome = prompt('Qual é o seu nome')
+    alert('É um grande prazer em te conhecer, ' + nome + '!')// o símbolo "+" significa concatenação...
+
+    var n1 = parseInt(prompt('Digite um número: ')) //String
+    var n2 = parseInt(prompt('Digite outro número: ')) // String
+    var s = n1 + n2 
+    alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)// Concatenação
+    // Aqui foi usado o templetestring para facilitar e deixar um código mais limpo apenas usando a crase no começo e final da declaração e o cifrão e chaves junto a variável...
+   </script>
+</body>
+</html>
