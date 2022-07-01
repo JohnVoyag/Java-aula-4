@@ -19,12 +19,19 @@
     </style>
 </head>
 <body>
-    <div id = "area" onclick = "clicar()" onmouseenter = "entrar()" onmouseout = "sair()">
+    <div id = "area">
         Interaja...
     </div>
 
     <script>
         var a = window.document.getElementById('area')  
+        /* Caso eu queira limpar o HTML da TAG DIV acima, 
+        <div id = "area" onclick = "clicar()" onmouseenter = "entrar()" onmouseout = "sair()"> e deixar
+        apenas para o JS ler o código DOM inteiro, basta fazer desta forma 
+        abaixo:*/
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair) 
         function clicar() {
             a.innerText = 'Clicou!'
             a.style.background = 'red'
